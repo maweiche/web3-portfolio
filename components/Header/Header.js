@@ -17,15 +17,8 @@ export default function Header() {
     const [page, setPage] = useState("home");
     const [header, setHeader] = useState("transparent");
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                setHeader("solid");
-            } else {
-                setHeader("transparent");
-            }
-        });
-    }, []);
+    
+
 
     return (
         <div className={styles.header_container}>

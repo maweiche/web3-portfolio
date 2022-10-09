@@ -8,12 +8,9 @@ import styles from '../styles/App.module.css'
 export default function App() {
   return (
     <div className={styles.container}>
-      <HeadComponent />
-        <Header />
-          <main className={styles.main}>
-            <Preview />
-          </main>
-      <Footer />
+      <main className={styles.main}>
+        <Preview />
+      </main>
     </div>
   )
 }
