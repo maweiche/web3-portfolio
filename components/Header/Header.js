@@ -29,7 +29,6 @@ export default function Header() {
 
     return (
         <div className={styles.header_container}>
-            <div className={styles.header}>
                 <div className={styles.header_left}>
                     <div className={styles.header_logo}>
                         <Link href="/">
@@ -56,7 +55,6 @@ export default function Header() {
                         </Link>
                     </div>
                 </div>
-            </div>
         </div>
 
     );

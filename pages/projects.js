@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import ProjectsDisplay from "../components/Projects/ProjectsDisplay";
 import styles from "../styles/Projects.module.css";
 
 const Projects = () => {

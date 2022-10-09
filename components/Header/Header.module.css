@@ -7,13 +7,8 @@
   height: 10vh;
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 10vh;
-}
+
+
 
 .header_left{
   display: flex;
@@ -32,4 +27,5 @@
 .header_menu{
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }

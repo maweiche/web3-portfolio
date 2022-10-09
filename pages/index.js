@@ -1,8 +1,8 @@
-import Head from 'next/head'
 import HeadComponent from '../components/Head'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import Image from 'next/image'
+import Preview from '../components/Preview/Preview'
+
 import styles from '../styles/App.module.css'
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
       <HeadComponent />
         <Header />
           <main className={styles.main}>
-            <h1>Main Container</h1>
+            <Preview />
           </main>
       <Footer />
     </div>
