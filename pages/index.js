@@ -9,10 +9,10 @@ export default function App() {
   return (
     <div className={styles.container}>
       <HeadComponent />
-      <Header />
-      <main className={styles.main}>
-        <h1>Main Container</h1>
-      </main>
+        <Header />
+          <main className={styles.main}>
+            <h1>Main Container</h1>
+          </main>
       <Footer />
     </div>
   )
