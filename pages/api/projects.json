@@ -1,0 +1,68 @@
+{
+    
+    "projects":[
+        {
+        "tags": [ "Next.js" ,"React" ,"Node.js", "JavaScript" ],
+        "name": "Next.js",
+        "description": "The React Framework for Production",
+        "url": "https://nextjs.org/",
+        "image": "https://nextjs.org/static/images/nextjs-logo.png"
+    },
+    {
+        "tags": [ "Next.js", "React", "Node.js" ,"JavaScript" ],
+        "name": "React",
+        "description": "A JavaScript library for building user interfaces",
+        "url": "https://reactjs.org/",
+        "image": "https://reactjs.org/logo-og.png"
+    },
+    {
+        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript" ],
+        "name": "Node.js",
+        "description": "JavaScript runtime built on Chrome's V8 JavaScript engine",
+        "url": "https://nodejs.org/en/",
+        "image": "https://nodejs.org/static/images/logo.svg"
+    },
+    {
+        "tags": [ "Next.js", "React" , "Node.js" ,"JavaScript", "Solana" ],
+        "name": "Solana",
+        "description": "Solana is a high-performance blockchain for decentralized applications and marketplaces",
+        "url": "https://solana.com/",
+        "image": "https://solana.com/static/branding/branding.png"
+    },
+    {
+        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Solana" ],
+        "name": "Phantom Wallet",
+        "description": "Phantom is a secure, open-source, non-custodial wallet for Solana",
+        "url": "https://phantom.app/",
+        "image": "https://phantom.app/static/branding/branding.png"
+    },
+    {
+        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Solana" ],
+        "name": "Solflare",
+        "description": "Solflare is a non-custodial wallet for Solana",
+        "url": "https://solflare.com/",
+        "image": "https://solflare.com/static/branding/branding.png"
+    },
+    {
+        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Ethereum" ],
+        "name": "Ethereum",
+        "description": "Ethereum is a decentralized, open-source blockchain with smart contract functionality",
+        "url": "https://ethereum.org/",
+        "image": "https://ethereum.org/static/branding/branding.png"
+    },
+    {
+        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Ethereum" ],
+        "name": "MetaMask",
+        "description": "MetaMask is a browser extension that allows you to interact with the Ethereum blockchain",
+        "url": "https://metamask.io/",
+        "image": "https://metamask.io/static/images/metamask-fox.svg"
+    },
+    {
+        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Ethereum" ],
+        "name": "Etherscan",
+        "description": "Etherscan is a block explorer and analytics platform for Ethereum",
+        "url": "https://etherscan.io/",
+        "image": "https://etherscan.io/images/brand-assets/etherscan-logo.svg"
+    }
+]
+}

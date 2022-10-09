@@ -2,12 +2,20 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./Preview.module.css";
+import { projects } from "../../pages/api/projects";
 
 export default function Preview() {
     const router = useRouter();
     const [projectToPreview, setProjectToPreview] = useState(null);
     const [activeProject, setActiveProject] = useState(null);
     const [activeProjectDetails, setActiveProjectDetails] = useState(null);
+    const [allProjects, setAllProjects] = useState(null);
+
+    const [javaScriptProjects, setJavaScriptProjects] = useState(null);
+    const [solanaProjects, setSolanaProjects] = useState(null);
+    const [ethereumProjects, setEthereumProjects] = useState(null);
+
+
     
     const tabs = [
         'JavaScript',
@@ -15,81 +23,12 @@ export default function Preview() {
         'Ethereum',
     ];
 
-    const JavaScript = [
-        {
-            name: 'Next.js',
-            description: 'The React Framework for Production',
-            url: 'https://nextjs.org/',
-            image: 'https://nextjs.org/static/images/nextjs-logo.png',
-        },
-        {
-            name: 'React',
-            description: 'A JavaScript library for building user interfaces',
-            url: 'https://reactjs.org/',
-            image: 'https://reactjs.org/logo-og.png',
-        },
-        {
-            name: 'Node.js',
-            description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine',
-            url: 'https://nodejs.org/en/',
-            image: 'https://nodejs.org/static/images/logo.svg',
-        },
-    ];
-
-    const Solana = [
-        {
-            name: 'Solana',
-            description: 'Solana is a high-performance blockchain for decentralized applications and marketplaces',
-            url: 'https://solana.com/',
-            image: 'https://solana.com/static/branding/branding.png',
-        },
-        {
-            name: 'Phantom Wallet',
-            description: 'Phantom is a secure, open-source, non-custodial wallet for Solana',
-            url: 'https://phantom.app/',
-            image: 'https://phantom.app/static/branding/branding.png',
-        },
-        {
-            name: 'Solflare',
-            description: 'Solflare is a non-custodial wallet for Solana',
-            url: 'https://solflare.com/',
-            image: 'https://solflare.com/static/branding/branding.png',
-        },
-    ];
-
-    const Ethereum = [
-        {
-            name: 'Ethereum',
-            description: 'Ethereum is a decentralized, open-source blockchain with smart contract functionality',
-            url: 'https://ethereum.org/',
-            image: 'https://ethereum.org/static/branding/branding.png',
-        },
-        {
-            name: 'MetaMask',
-            description: 'MetaMask is a browser extension that allows you to interact with the Ethereum blockchain',
-            url: 'https://metamask.io/',
-            image: 'https://metamask.io/static/images/metamask-fox.svg',
-        },
-        {
-            name: 'Etherscan',
-            description: 'Etherscan is a block explorer and analytics platform for Ethereum',
-            url: 'https://etherscan.io/',
-            image: 'https://etherscan.io/images/brand-assets/etherscan-logo.svg',
-        },
-    ];
-
-    useEffect(() => {
-        if (router.query.project) {
-            setProjectToPreview(router.query.project);
-        }
-    }, [router.query.project]);
-
     useEffect(() => {
         console.log(projectToPreview);
         if (projectToPreview) {
             if (projectToPreview === 'JavaScript') {
                 console.log('projectToPreview is JavaScript');
-                setActiveProject(JavaScript);
+                setActiveProject(javaScriptProjects);
                 setActiveProjectDetails({
                     name: 'JavaScript Projects',
                     description: 'JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.',
@@ -98,7 +37,7 @@ export default function Preview() {
                 })
             } else if (projectToPreview === 'Solana') {
                 console.log('projectToPreview is Solana');
-                setActiveProject(Solana);
+                setActiveProject(solanaProjects);
                 setActiveProjectDetails({
                     name: 'Solana Projects',
                     description: 'Solana is a high-performance blockchain for decentralized applications and marketplaces.',
@@ -107,7 +46,7 @@ export default function Preview() {
                 })
             } else if (projectToPreview === 'Ethereum') {
                 console.log('projectToPreview is Ethereum');
-                setActiveProject(Ethereum);
+                setActiveProject(ethereumProjects);
                 setActiveProjectDetails({
                     name: 'Ethereum Projects',
                     description: 'Ethereum is a decentralized, open-source blockchain with smart contract functionality. All projects have been deployed via testnet.',
@@ -117,6 +56,28 @@ export default function Preview() {
             }
         }
     }, [projectToPreview]);
+
+    useEffect(() => {
+        const allProjects = projects;
+        console.log('allProjects', allProjects);
+        setAllProjects(allProjects);
+
+        // filter allProjects to find projects with JavaScript tag
+        const javaScriptProjects = allProjects.filter(project => project.tags.includes('JavaScript'));
+        console.log('javaScriptProjects', javaScriptProjects);
+        setJavaScriptProjects(javaScriptProjects);
+
+        // filter allProjects to find projects with Solana tag
+        const solanaProjects = allProjects.filter(project => project.tags.includes('Solana'));
+        console.log('solanaProjects', solanaProjects);
+        setSolanaProjects(solanaProjects);
+
+        // filter allProjects to find projects with Ethereum tag
+        const ethereumProjects = allProjects.filter(project => project.tags.includes('Ethereum'));
+        console.log('ethereumProjects', ethereumProjects);
+        setEthereumProjects(ethereumProjects);
+
+    }, []);
 
 
 
