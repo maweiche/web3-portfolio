@@ -11,7 +11,7 @@ const Welcome = () => {
                 Web3 projects and building a community around them. I&apos;m also a Teaching Assitant for{" "}
                 <a href="https://www.buildspace.so" target="_blank" rel="noopener noreferrer">
                     _buildspace
-                </a>
+                </a>{" "}
                 and the lead developer at{" "}
                 <a href="https://www.ikonshop.io" target="_blank" rel="noopener noreferrer">
                     ikonshop.io

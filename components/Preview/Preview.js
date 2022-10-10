@@ -33,7 +33,7 @@ export default function Preview() {
                 console.log('projectToPreview is JavaScript');
                 setActiveProject(javaScriptProjects);
                 setActiveProjectDetails({
-                    name: 'JavaScript Projects',
+                    name: 'JavaScript',
                     description: 'JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.',
                     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
                     image: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
@@ -42,7 +42,7 @@ export default function Preview() {
                 console.log('projectToPreview is Solana');
                 setActiveProject(solanaProjects);
                 setActiveProjectDetails({
-                    name: 'Solana Projects',
+                    name: 'Solana',
                     description: 'Solana is a high-performance blockchain for decentralized applications and marketplaces.',
                     url: 'https://solana.com/',
                     image: 'https://solana.com/_next/static/media/solanaLogoMark.17260911.svg',
@@ -51,7 +51,7 @@ export default function Preview() {
                 console.log('projectToPreview is Ethereum');
                 setActiveProject(ethereumProjects);
                 setActiveProjectDetails({
-                    name: 'Ethereum Projects',
+                    name: 'Ethereum',
                     description: 'Ethereum is a decentralized, open-source blockchain with smart contract functionality. All projects have been deployed via testnet.',
                     image: 'https://ethereum.org/static/0453c88b09ddaa2c7e7552840c650ad2/1f265/finance_transparent.webp',
                     url: 'https://ethereum.org/',
@@ -128,7 +128,9 @@ export default function Preview() {
                                 {activeProjectDetails.description}
                             </p>
                             <div className={styles.project_link}>
+                                <span>Site: </span>
                                 <Link href={activeProjectDetails.url}>
+                                    
                                     <a target="_blank">
                                         {activeProjectDetails.name}
                                     </a>

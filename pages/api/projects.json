@@ -2,63 +2,49 @@
     
     "projects":[
         {
-        "tags": [ "Next.js" ,"React" ,"Node.js", "JavaScript" ],
-        "name": "Next.js",
-        "description": "The React Framework for Production",
-        "url": "https://nextjs.org/",
-        "image": "https://nextjs.org/static/images/nextjs-logo.png"
+        "tags": [ "Next.js" ,"React" ,"Node.js", "GraphQL", "Solana", "AWS" ],
+        "name": "NFT Gated Marketplace",
+        "description": "Developed the Front and Back-End of a NFT Gated Marketplace designed for PenFrens. User can connect their wallet and purchase that specific Animated NFT, then download it from our database.",
+        "url": "https://animate.penfrens.com/",
+        "image": "/PenFrens.png"
     },
     {
-        "tags": [ "Next.js", "React", "Node.js" ,"JavaScript" ],
-        "name": "React",
-        "description": "A JavaScript library for building user interfaces",
-        "url": "https://reactjs.org/",
-        "image": "https://reactjs.org/logo-og.png"
+        "tags": [ "Next.js", "React", "Node.js" ,"JavaScript", "GraphQL" ],
+        "name": "Blog",
+        "description": "Created the Front and Back-End of a Blog using Next.js, React, Node.js, GraphQL, and Hygraph. Users can create an account, login, and leave comments.",
+        "url": "https://rebeccaandmatt.com/",
+        "image": "/Blog.png"
     },
     {
-        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript" ],
-        "name": "Node.js",
-        "description": "JavaScript runtime built on Chrome's V8 JavaScript engine",
-        "url": "https://nodejs.org/en/",
-        "image": "https://nodejs.org/static/images/logo.svg"
+        "tags": [ "React" ,"Node.js" ,"JavaScript", "CSS", "HTML" ],
+        "name": "Art Portfolio",
+        "description": "A static art website created to showcase artwork of a renowned grafitti artist in the San Jose area.",
+        "url": "https://doc-ques-portfolio.vercel.app/",
+        "image": "/ArtPortfolio.png"
     },
     {
-        "tags": [ "Next.js", "React" , "Node.js" ,"JavaScript", "Solana" ],
+        "tags": [ "Next.js", "React" , "Node.js" , "Solana" ],
         "name": "IkonShop",
-        "description": "A marketplace designed for the Solana blockchain",
-        "url": "https://solana.com/",
-        "image": "https://solana.com/static/branding/branding.png"
+        "description": "A marketplace built on the Solana Blockchain. Merchants can upload/sell their products for any SPL token and Users can create Pay Requests along with Tip Links via interactive dashboards. The app utilizes Javascript on the front-end and GQL for the back-end.",
+        "url": "https://ikonshop.io/",
+        "image": "/IkonShop.png"
     },
     {
-        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Solana" ],
-        "name": "Phantom Wallet",
-        "description": "Phantom is a secure, open-source, non-custodial wallet for Solana",
-        "url": "https://phantom.app/",
-        "image": "https://phantom.app/static/branding/branding.png"
-    },
-    {
-        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Solana" ],
-        "name": "Solflare",
-        "description": "Solflare is a non-custodial wallet for Solana",
-        "url": "https://solflare.com/",
-        "image": "https://solflare.com/static/branding/branding.png"
-    },
-    {
-        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Ethereum" ],
+        "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
         "name": "Ethereum",
         "description": "Ethereum is a decentralized, open-source blockchain with smart contract functionality",
         "url": "https://ethereum.org/",
         "image": "https://ethereum.org/static/branding/branding.png"
     },
     {
-        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Ethereum" ],
+        "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
         "name": "MetaMask",
         "description": "MetaMask is a browser extension that allows you to interact with the Ethereum blockchain",
         "url": "https://metamask.io/",
         "image": "https://metamask.io/static/images/metamask-fox.svg"
     },
     {
-        "tags": [ "Next.js", "React" ,"Node.js" ,"JavaScript", "Ethereum" ],
+        "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
         "name": "Etherscan",
         "description": "Etherscan is a block explorer and analytics platform for Ethereum",
         "url": "https://etherscan.io/",
