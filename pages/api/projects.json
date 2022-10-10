@@ -5,7 +5,7 @@
         "tags": [ "Next.js" ,"React" ,"Node.js", "GraphQL", "Solana", "AWS" ],
         "name": "NFT Gated Marketplace",
         "description": "Developed the Front and Back-End of a NFT Gated Marketplace designed for PenFrens. User can connect their wallet and purchase that specific Animated NFT, then download it from our database.",
-        "url": "https://animate.penfrens.com/",
+        "url": "https://animate.penfrens.io/",
         "image": "/PenFrens.png"
     },
     {
@@ -16,7 +16,7 @@
         "image": "/Blog.png"
     },
     {
-        "tags": [ "React" ,"Node.js" ,"JavaScript", "CSS", "HTML" ],
+        "tags": [ "JavaScript", "CSS", "HTML" ],
         "name": "Art Portfolio",
         "description": "A static art website created to showcase artwork of a renowned grafitti artist in the San Jose area.",
         "url": "https://doc-ques-portfolio.vercel.app/",
