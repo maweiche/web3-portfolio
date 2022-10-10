@@ -15,32 +15,33 @@
   align-items: center;
 }
 
-/* have .peeking photo appear hidden then slowly show from bottom of div then hide again, just loop*/
+/* have peeking photo appear in middle of screen, peeking_photo animation, and linger at top of screen then go back down*/
 .peeking_photo {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 200;
+  width: 20vw;
   opacity: 0;
-  z-index: -1;
-  animation: peeking_photo 6s ease-in-out;
+  height: auto;
+  animation: peeking_photo 8s ease-in-out 5s infinite;
 }
 
 @keyframes peeking_photo {
   0% {
-    opacity: 0;
     transform: translateY(100%);
-  }
-  50% {
     opacity: 1;
-    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+  75%{
+    transform: translateY(-15%);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(100%);
+    opacity: .5;
   }
 }
 
