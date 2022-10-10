@@ -28,27 +28,6 @@
         "description": "A marketplace built on the Solana Blockchain. Merchants can upload/sell their products for any SPL token and Users can create Pay Requests along with Tip Links via interactive dashboards. The app utilizes Javascript on the front-end and GQL for the back-end.",
         "url": "https://ikonshop.io/",
         "image": "/Ikonshop.png"
-    },
-    {
-        "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
-        "name": "Ethereum",
-        "description": "Ethereum is a decentralized, open-source blockchain with smart contract functionality",
-        "url": "https://ethereum.org/",
-        "image": "https://ethereum.org/static/branding/branding.png"
-    },
-    {
-        "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
-        "name": "MetaMask",
-        "description": "MetaMask is a browser extension that allows you to interact with the Ethereum blockchain",
-        "url": "https://metamask.io/",
-        "image": "https://metamask.io/static/images/metamask-fox.svg"
-    },
-    {
-        "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
-        "name": "Etherscan",
-        "description": "Etherscan is a block explorer and analytics platform for Ethereum",
-        "url": "https://etherscan.io/",
-        "image": "https://etherscan.io/images/brand-assets/etherscan-logo.svg"
     }
 ]
 }
