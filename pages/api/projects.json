@@ -27,7 +27,7 @@
         "name": "IkonShop",
         "description": "A marketplace built on the Solana Blockchain. Merchants can upload/sell their products for any SPL token and Users can create Pay Requests along with Tip Links via interactive dashboards. The app utilizes Javascript on the front-end and GQL for the back-end.",
         "url": "https://ikonshop.io/",
-        "image": "/IkonShop.png"
+        "image": "/Ikonshop.png"
     },
     {
         "tags": [ "Next.js", "React" ,"Node.js" , "Ethereum" ],
