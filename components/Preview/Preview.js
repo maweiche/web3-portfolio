@@ -21,7 +21,7 @@ export default function Preview() {
     const tabs = [
         'JavaScript',
         'Solana',
-        'Ethereum',
+        // 'Ethereum',
     ];
 
    

@@ -34,7 +34,7 @@ const Welcome = () => {
                 <br />
 
                 My resume is available{" "}
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/MWresume22.pdf" target="_blank" rel="noopener noreferrer">
                     here
                 </a>
                 .
