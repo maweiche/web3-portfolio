@@ -9,6 +9,7 @@ export default function App() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
+        <img className={styles.peeking_photo} src="/matt.png" alt="logo" />
         <Preview />
       </main>
     </div>

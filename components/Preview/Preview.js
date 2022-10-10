@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./Preview.module.css";
 import { projects } from "../../pages/api/projects";
+import Welcome from "../Welcome";
 
 export default function Preview() {
     const router = useRouter();
@@ -22,6 +23,8 @@ export default function Preview() {
         'Solana',
         'Ethereum',
     ];
+
+   
 
     useEffect(() => {
         console.log(projectToPreview);
@@ -57,6 +60,7 @@ export default function Preview() {
         }
     }, [projectToPreview]);
 
+    
     useEffect(() => {
         const allProjects = projects;
         console.log('allProjects', allProjects);
@@ -77,6 +81,12 @@ export default function Preview() {
         console.log('ethereumProjects', ethereumProjects);
         setEthereumProjects(ethereumProjects);
 
+        window.addEventListener('logo_clicked', (e) => {
+            setActiveProjectDetails(null);
+        }
+        )
+        
+
     }, []);
 
 
@@ -94,7 +104,7 @@ export default function Preview() {
                     </div>
                 ))}
             </div>
-            <div className={styles.project_container}>
+            <div id='preview_container' className={styles.project_container}>
                 <div className={styles.project_tabs}>
                     {activeProject && (
                         activeProject.map((project, index) => (
@@ -107,7 +117,7 @@ export default function Preview() {
                             </div>
                     )))}
                 </div>
-                {activeProjectDetails && (
+                {activeProjectDetails ? (
                     <div className={styles.project_display}>
                         
                         <div className={styles.project_image}>
@@ -128,6 +138,10 @@ export default function Preview() {
                         
                         
                     </div>
+                )
+                : 
+                (
+                    <Welcome />
                 )}
             </div>
         </div>

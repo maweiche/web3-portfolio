@@ -17,36 +17,41 @@ export default function Header() {
     const [page, setPage] = useState("home");
     const [header, setHeader] = useState("transparent");
 
+    // when div id logo is clicked dispatch 'logo_clicked' event to window object
     
 
 
     return (
         <div className={styles.header_container}>
                 <div className={styles.header_left}>
-                    <div className={styles.header_logo}>
+                    <div id='logo' className={styles.header_logo}>
                         <Link href="/">
-                            <a>
-                                {/* <img src="/images/logo.png" alt="logo" /> */}
+                            <a
+                                onClick={() => {
+                                    window.dispatchEvent(new Event('logo_clicked'));
+                                }}
+                            >
+                                Matt Weichel | Web3 Developer
                             </a>
                         </Link>
                     </div>
                 </div>
                 <div className={styles.header_right}>
-                    <div className={styles.header_menu}>
+                    {/* <div className={styles.header_menu}>
                         <Link href="/about">
                             <a>About</a>
                         </Link>
-                    </div>
+                    </div> */}
                     <div className={styles.header_menu}>
                         <Link href="/projects">
                             <a>Projects</a>
                         </Link>
                     </div>
-                    <div className={styles.header_menu}>
+                    {/* <div className={styles.header_menu}>
                         <Link href="/contact">
                             <a>Contact</a>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
         </div>
 

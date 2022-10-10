@@ -24,8 +24,8 @@
     },
     {
         "tags": [ "Next.js", "React" , "Node.js" ,"JavaScript", "Solana" ],
-        "name": "Solana",
-        "description": "Solana is a high-performance blockchain for decentralized applications and marketplaces",
+        "name": "IkonShop",
+        "description": "A marketplace designed for the Solana blockchain",
         "url": "https://solana.com/",
         "image": "https://solana.com/static/branding/branding.png"
     },
