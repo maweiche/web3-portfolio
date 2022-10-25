@@ -52,3 +52,9 @@
     color: #0050d3;
 }
 
+@media (max-width: 768px) {
+    .welcome_description{
+        font-size: 10px;
+    }
+}
+

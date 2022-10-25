@@ -92,61 +92,65 @@ export default function Preview() {
 
 
     return (
-        <div className={styles.preview_container}>
-            <div className={styles.tab_container}>
-                {tabs.map((tab, index) => (
-                    <div
-                        key={index}
-                        className={styles.tab}
-                        onClick={() => setProjectToPreview(tab)}
-                    >
-                        {tab}
-                    </div>
-                ))}
-            </div>
-            <div id='preview_container' className={styles.project_container}>
-                <div className={styles.project_tabs}>
-                    {activeProject && (
-                        activeProject.map((project, index) => (
-                            <div
-                                key={index}
-                                className={styles.project_tab}
-                                onClick={() => setActiveProjectDetails(project)}
-                            >
-                                {project.name}
-                            </div>
-                    )))}
+        <>
+            <img className={styles.peeking_photo} src="/matt.png" alt="logo" />
+            <div className={styles.preview_container}>
+                <div className={styles.tab_container}>
+                    {tabs.map((tab, index) => (
+                        <div
+                            key={index}
+                            className={styles.tab}
+                            onClick={() => setProjectToPreview(tab)}
+                        >
+                            {tab}
+                        </div>
+                    ))}
                 </div>
-                {activeProjectDetails ? (
-                    <div className={styles.project_display}>
-                        
-                        <div className={styles.project_image}>
-                            <img src={activeProjectDetails.image} alt={activeProjectDetails.name} />
-                        </div>
-                        <div className={styles.project_description}>
-                            <p>
-                                {activeProjectDetails.description}
-                            </p>
-                            <div className={styles.project_link}>
-                                <span>Site: </span>
-                                <Link href={activeProjectDetails.url}>
-                                    
-                                    <a target="_blank">
-                                        {activeProjectDetails.name}
-                                    </a>
-                                </Link>
-                        </div>
-                        </div>
-                        
-                        
+                <div id='preview_container' className={styles.project_container}>
+                    <div className={styles.project_tabs}>
+                        {activeProject && (
+                            activeProject.map((project, index) => (
+                                <div
+                                    key={index}
+                                    className={styles.project_tab}
+                                    onClick={() => setActiveProjectDetails(project)}
+                                >
+                                    {project.name}
+                                </div>
+                        )))}
                     </div>
-                )
-                : 
-                (
-                    <Welcome />
-                )}
+                    {activeProjectDetails ? (
+                        <div className={styles.project_display}>
+                            
+                            <div className={styles.project_image}>
+                                <img src={activeProjectDetails.image} alt={activeProjectDetails.name} />
+                            </div>
+                            <div className={styles.project_description}>
+                                <p>
+                                    {activeProjectDetails.description}
+                                </p>
+                                <div className={styles.project_link}>
+                                    <span>Site: </span>
+                                    <Link href={activeProjectDetails.url}>
+                                        
+                                        <a target="_blank">
+                                            {activeProjectDetails.name}
+                                        </a>
+                                    </Link>
+                            </div>
+                            </div>
+                            
+                            
+                        </div>
+                    )
+                    : 
+                    (
+                        <Welcome />
+                    )}
+                </div>
             </div>
-        </div>
+        </>
+        
     );
 }
 
