@@ -28,7 +28,7 @@ const Welcome = () => {
                 </Link>{" "}
                 me! 
                 <br />
-                You can find previews of my projects in certain topics by clicking the tabs to the left!
+                You can view specific topics on the left and then a project tab on the top row!
 
                 <br />
                 <br />
@@ -45,7 +45,7 @@ const Welcome = () => {
                 <a href="https://github.com/maweiche/web3-portfolio" target="_blank" rel="noopener noreferrer">
                     source code
                 </a>
-                and fork it to make your own!
+                {" "}and fork it to make your own!
                 <br />
                 Cheers!
             </p>

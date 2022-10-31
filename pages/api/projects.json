@@ -45,10 +45,17 @@
     },
     {
         "tags": ["Rust", "Cargo","Terminal", "CLI"],
-        "name": "Guessing Game",
+        "name": "CLI Guessing Game",
         "description": "A simple guessing game built in Rust. The app utilizes Rust to interact with the user via CLI to guess a number.",
         "url": "https://github.com/maweiche/rust_guessing_game",
         "image": "/GuessingGame.png"
+    },
+    {
+        "tags": [ "JavaScript", "CSS", "React", "NextJS", "Solana", "GQL" ],
+        "name": "ABC Merch Store",
+        "description": "A static website created to showcase a client's merchandise. The store is designed to sell Clothes with different product variations.",
+        "url": "https://abcmerch.w3blen.com/",
+        "image": "/Abcstore.png"
     }
 ]
 }
