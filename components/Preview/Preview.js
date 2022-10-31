@@ -15,12 +15,14 @@ export default function Preview() {
     const [javaScriptProjects, setJavaScriptProjects] = useState(null);
     const [solanaProjects, setSolanaProjects] = useState(null);
     const [ethereumProjects, setEthereumProjects] = useState(null);
+    const [rustProjects, setRustProjects] = useState(null);
 
 
     
     const tabs = [
         'JavaScript',
         'Solana',
+        'Rust',
         // 'Ethereum',
     ];
 
@@ -56,6 +58,15 @@ export default function Preview() {
                     image: 'https://ethereum.org/static/0453c88b09ddaa2c7e7552840c650ad2/1f265/finance_transparent.webp',
                     url: 'https://ethereum.org/',
                 })
+            } else if (projectToPreview === 'Rust') {
+                console.log('projectToPreview is Rust');
+                setActiveProject(rustProjects);
+                setActiveProjectDetails({
+                    name: 'Rust',
+                    description: 'Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.',
+                    image: 'https://www.rust-lang.org/logos/rust-logo-512x512.png',
+                    url: 'https://www.rust-lang.org/',
+                })
             }
         }
     }, [projectToPreview]);
@@ -80,6 +91,12 @@ export default function Preview() {
         const ethereumProjects = allProjects.filter(project => project.tags.includes('Ethereum'));
         console.log('ethereumProjects', ethereumProjects);
         setEthereumProjects(ethereumProjects);
+
+        // filter allProjects to find projects with Rust tag
+        const rustProjects = allProjects.filter(project => project.tags.includes('Rust'));
+        console.log('rustProjects', rustProjects);
+        setRustProjects(rustProjects);
+        
 
         window.addEventListener('logo_clicked', (e) => {
             setActiveProjectDetails(null);

@@ -28,6 +28,27 @@
         "description": "A marketplace built on the Solana Blockchain. Merchants can upload/sell their products for any SPL token and Users can create Pay Requests along with Tip Links via interactive dashboards. The app utilizes Javascript on the front-end and GQL for the back-end.",
         "url": "https://ikonshop.io/",
         "image": "/Ikonshop.png"
+    },
+    {
+        "tags": [ "Next.js", "React" , "Node.js" , "Solana" , "GQL" ],
+        "name": "Slabz.io",
+        "description": "Custom Marketplace built client specific for a Card Engraving team in the NFT space. The app utilizes Javascript on the front-end and GQL for the back-end.",
+        "url": "https://shop.slabz.io/",
+        "image": "/Slabzio.png"
+    },
+    {
+        "tags": [ "JavaScript", "CSS", "HTML", "REST API", "Bootstrap" ],
+        "name": "Pet Adoption Finder",
+        "description": "A static website created to help users find their next pet. The app utilizes Javascript on the front-end and REST API for the back-end.",
+        "url": "https://hidden-temple-34647.herokuapp.com/",
+        "image": "/PetAdoption.png"
+    },
+    {
+        "tags": ["Rust", "Cargo","Terminal", "CLI"],
+        "name": "Guessing Game",
+        "description": "A simple guessing game built in Rust. The app utilizes Rust to interact with the user via CLI to guess a number.",
+        "url": "https://github.com/maweiche/rust_guessing_game",
+        "image": "/GuessingGame.png"
     }
 ]
 }
